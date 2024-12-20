@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_main"
+        android:title="Inicio"
+        android:icon="@android:drawable/ic_menu_home"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/menu_games"
+        android:title="Juegos"
+        android:icon="@android:drawable/ic_menu_gallery"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/menu_about"
+        android:title="Acerca de"
+        android:icon="@android:drawable/ic_menu_info_details"
+        app:showAsAction="never" />
+</menu>
