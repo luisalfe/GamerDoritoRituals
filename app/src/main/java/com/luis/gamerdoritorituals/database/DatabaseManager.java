@@ -39,6 +39,13 @@ public class DatabaseManager extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
         // Crear la tabla al inicializar la base de datos
         db.execSQL(CREATE_TABLE_TASKS);
+
+        // Insertar tareas iniciales
+        db.execSQL("INSERT INTO tasks (title, description, is_completed) VALUES " +
+                "('Elden Ring', 'Intentar invadir y eliminar a 5 pobres almas', 0), " +
+                "('Nutrición', 'Tomarme un Monster y terminar la bolsa de Doritos que tengo a la mitad', 1), " +
+                "('Ritual Opcional', 'Intentar acceder al habitáculo llamado ducha y desafiar mi instinto de supervivencia abriendo el grifo', 0)," +
+                "('Mirar las Instrucciones', 'Pulsar el icono de ayuda en el menu para saber como funciona este bicho', 0)");
     }
 
     @Override

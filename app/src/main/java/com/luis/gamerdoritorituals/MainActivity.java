@@ -168,7 +168,11 @@ public class MainActivity extends AppCompatActivity {
     private void showAboutDialog() {
         new AlertDialog.Builder(this)
                 .setTitle("Acerca de")
-                .setMessage("Esta aplicación está diseñada para organizar rituales gamer. ¡Diviértete!")
+                .setMessage("Esta aplicación está diseñada para organizar rituales gamer. ¡Diviértete!\n\n" +
+                        "Instrucciones:\n" +
+                        "• Para añadir una tarea, pulsa el botón 'Añadir Tarea'.\n" +
+                        "• Para editar una tarea, pulsa una vez sobre la tarea a modificar.\n" +
+                        "• Para eliminar una tarea, mantén pulsada la tarea durante unos instantes.")
                 .setPositiveButton("OK", null)
                 .show();
     }
