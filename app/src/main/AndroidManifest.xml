@@ -13,6 +13,9 @@
         android:theme="@style/Theme.GamerDoritoRituals"
         tools:targetApi="31">
         <activity
+            android:name=".VoteActivity"
+            android:exported="false" />
+        <activity
             android:name=".GamesActivity"
             android:exported="false" />
         <activity

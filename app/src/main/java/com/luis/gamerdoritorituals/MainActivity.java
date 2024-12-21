@@ -15,6 +15,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.luis.gamerdoritorituals.database.DatabaseManager;
 import com.luis.gamerdoritorituals.model.Task;
 
@@ -83,6 +84,13 @@ public class MainActivity extends AppCompatActivity {
 
         // Zona para ir vinculando los elementos excepto el LV que va arriba con el adaptador
         Button btnAddTask = findViewById(R.id.btnAddTask);
+
+        // Configuracion del boton flotante para el concurso
+        FloatingActionButton fabVote = findViewById(R.id.fabVote);
+        fabVote.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, VoteActivity.class);
+            startActivity(intent);
+        });
 
         // Configuración del botón para añadir tareas
         btnAddTask.setOnClickListener(new View.OnClickListener() {
