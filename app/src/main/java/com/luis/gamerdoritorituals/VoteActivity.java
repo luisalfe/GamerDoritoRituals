@@ -79,7 +79,7 @@ public class VoteActivity extends AppCompatActivity {
 
     // Método para votar por Waifu 3
     public void voteWaifu3(android.view.View view) {
-        showVoteDialog("Hinata Hyuga (Naruto)");
+        showVoteDialog("Geralt de Rivia (The Witcher)");
     }
 
     // Método para votar por Waifu 4

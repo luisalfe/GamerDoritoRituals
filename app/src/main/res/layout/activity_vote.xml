@@ -101,7 +101,7 @@
         <ImageView
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:src="@drawable/waifu_3"
+            android:src="@drawable/waifu_5"
             android:contentDescription="Imagen de waifu" />
 
         <TextView
@@ -110,7 +110,7 @@
             android:layout_weight="1"
             android:layout_marginStart="16dp"
             android:gravity="center_vertical"
-            android:text="Hinata Ryuga"
+            android:text="Gerardo el Magias"
             android:textSize="18sp"
             android:textStyle="bold" />
 
